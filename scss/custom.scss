@@ -3,41 +3,6 @@ body{
     //background-color: $black;
 }
 
-.nav_01 {
-    .navWrap {
-        @include screen(pcSmall) {
-            //桌機-導覽列顏色
-            //background-color: rgba(0, 0, 0, 0.9);
-        }
-        .logoWrap {
-            //手機-導覽列顏色
-            //background-color: rgba(0, 0, 0, 0.9);
-            @include screen(pcSmall) {
-                // 手機-導覽列顏色
-                //background-color: transparent;
-            }
-        }
-        .menuWrap {
-            ul.menu {
-                li {
-                    @include screen(pcSmall) {
-                        ul {
-                            //子選單背景顏色
-                            //background-color: rgba(188, 0, 45, 1);
-                        }
-                        &:hover ul {
-                            li {
-                                //子選單背景顏色
-                                //background-color: rgba(188, 0, 45, 1);
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
 .header_03 {
     .headerWrap {
         .visualBg {
