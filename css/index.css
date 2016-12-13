@@ -6602,3 +6602,22 @@ _:-ms-input-placeholder, :root .fixedBtnCover_01 .coverWrap .main .mainWrap .ite
 .header_03 .headerWrap .detail .detailWrap .txtInner a.link:hover {
   background-color: rgba(7, 208, 0, 0.9);
 }
+
+.video_01 {
+  background-image: url("../img/video_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(23, 23, 118, 0.7);
+}
+
+@media screen and (min-width: 1280px) {
+  .video_01 {
+    background-size: 100% auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .video_01 .videoWrap {
+    padding: 15% 0 4% 0;
+  }
+}
