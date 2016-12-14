@@ -25,15 +25,15 @@ body{
             .detailWrap {
                 .txtBg {
                     //描述背景色
-                    background-color: rgba(0, 34, 45, 1);
+                    background-color: rgba(0, 0, 0, 1);
                 }
                 .txtInner {
                     a.link {
                         //馬上閱讀背景色
-                        background-color: rgba(7, 208, 0, 1);
+                        background-color: rgba(23, 23, 118, 1);
                         &:hover {
                             //馬上閱讀背景色－滑過
-                            background-color: rgba(7, 208, 0, 0.9);
+                            background-color: rgba(23, 23, 118, 0.9);
                         }
                     }
                 }
@@ -74,7 +74,7 @@ body{
                     a.img {
                         .linkWrap {
                             //圖片滑過色塊
-                            //background-color: rgba(122, 161, 194, 0.8);
+                            background-color: rgba(23, 23, 118, 0.8);
                         }
                         &:after {
                             //文章區塊背景色
@@ -97,7 +97,7 @@ body{
                         a.img {
                             .linkWrap {
                                 //圖片滑過色塊
-                                //background-color: rgba(122, 161, 194, 0.8);
+                                background-color: rgba(23, 23, 118, 0.8);
                             }
                         }
                     }
@@ -158,13 +158,13 @@ body{
                         a.img {
                             .linkWrap {
                                 //奇數圖片滑過顏色
-                                //background-color: rgba(188, 0, 45, 0.9);
+                                background-color: rgba(23, 23, 118, 0.9);
                             }
                         }
                     }
                     &:nth-child(even) {
                         //文章區塊背景色
-                        //background-color: rgba(244, 244, 244, 1);
+                        //background-color: rgba(23, 23, 118, 1);
                         &:after {
                             //文章區塊背景色－三角形
                             //border-color: transparent transparent transparent rgba(244, 244, 244, 1);
@@ -172,7 +172,7 @@ body{
                         a.img {
                             .linkWrap {
                                 //偶數圖片滑過顏色
-                                //background-color: rgba(188, 0, 45, 0.9);
+                                background-color: rgba(23, 23, 118, 0.9);
                             }
                         }
                         .txtWrap {
@@ -247,7 +247,7 @@ body{
                         a.img {
                             .linkWrap {
                                 //圖片滑過色塊
-                                //background-color: rgba(235, 90, 36, 0.9);
+                                background-color: rgba(23, 23, 118, 0.9);
                             }
                         }
                         .txtWrap {
@@ -284,13 +284,13 @@ body{
 
 .footer_01 {
     //背景色
-    //background-color: rgba(188,202,210,1);
+    background-color: rgba(0,0,0,1);
 }
 
 ul.fixedBtn_01,
 .fixedBtnCover_01 .coverWrap .main .mainWrap .item ul.share {
     li .material_btn {
         //按鈕色
-        //background-color: rgba(98,195,204,1);
+        background-color: rgba(23,23,118,1);
     }
 }

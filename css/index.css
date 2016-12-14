@@ -6592,15 +6592,35 @@ _:-ms-input-placeholder, :root .fixedBtnCover_01 .coverWrap .main .mainWrap .ite
 }
 
 .header_03 .headerWrap .detail .detailWrap .txtBg {
-  background-color: #00222d;
+  background-color: black;
 }
 
 .header_03 .headerWrap .detail .detailWrap .txtInner a.link {
-  background-color: #07d000;
+  background-color: #171776;
 }
 
 .header_03 .headerWrap .detail .detailWrap .txtInner a.link:hover {
-  background-color: rgba(7, 208, 0, 0.9);
+  background-color: rgba(23, 23, 118, 0.9);
+}
+
+.layout_02 .layoutWrap ul.articleWrap li .article a.img .linkWrap {
+  background-color: rgba(23, 23, 118, 0.8);
+}
+
+.layout_02 .layoutWrap ul.articleWrap li.big .article a.img .linkWrap {
+  background-color: rgba(23, 23, 118, 0.8);
+}
+
+.layout_03 .layoutWrap .articleWrap ul.article li:nth-child(odd) a.img .linkWrap {
+  background-color: rgba(23, 23, 118, 0.9);
+}
+
+.layout_03 .layoutWrap .articleWrap ul.article li:nth-child(even) a.img .linkWrap {
+  background-color: rgba(23, 23, 118, 0.9);
+}
+
+.layout_04 .layoutWrap .sliderWrap .slidesWrap ul.slides li a.img .linkWrap {
+  background-color: rgba(23, 23, 118, 0.9);
 }
 
 .video_01 {
@@ -6620,4 +6640,13 @@ _:-ms-input-placeholder, :root .fixedBtnCover_01 .coverWrap .main .mainWrap .ite
   .video_01 .videoWrap {
     padding: 15% 0 4% 0;
   }
+}
+
+.footer_01 {
+  background-color: black;
+}
+
+ul.fixedBtn_01 li .material_btn,
+.fixedBtnCover_01 .coverWrap .main .mainWrap .item ul.share li .material_btn {
+  background-color: #171776;
 }
