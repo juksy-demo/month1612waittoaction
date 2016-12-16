@@ -1,0 +1,296 @@
+body{
+    //若使用 header_02 將背景變成黑色 影片較不會破圖
+    //background-color: $black;
+}
+
+.header_03 {
+    .headerWrap {
+        .visualBg {
+            .banner {
+                .bullet {
+                    //輪播導覽條
+                    //display: none;
+                }
+            }
+            .bannerTitle {
+                //蓋住不動的標題
+                display: none;
+            }
+            .bannerCover {
+                //蓋住不動的圖紋
+                display: none;
+            }
+        }
+        .detail {
+            .detailWrap {
+                .txtBg {
+                    //描述背景色
+                    background-color: rgba(0, 0, 0, 1);
+                }
+                .txtInner {
+                    a.link {
+                        //馬上閱讀背景色
+                        background-color: rgba(23, 23, 118, 1);
+                        &:hover {
+                            //馬上閱讀背景色－滑過
+                            background-color: rgba(23, 23, 118, 0.9);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.layout_02 {
+    //背景色
+    //background-color: $white;
+    .layoutWrap {
+        .title {
+            //上標題文字顏色
+            //color: $black;
+            &:after {
+                //上標題底線顏色
+                //background-color: $black;
+            }
+        }
+        .detail {
+            //下標題文字顏色
+            //color: $black;
+        }
+        .subTitleWrap {
+            p.subTitle {
+                //描述顏色
+                //color: rgba(102, 102, 102, 1);
+            }
+        }
+        ul.articleWrap {
+            li {
+                //區塊上方線條顏色
+                //border-top: 1px solid #005887;
+                .article {
+                    //文章區塊背景色
+                    //background-color: #005887;
+                    a.img {
+                        .linkWrap {
+                            //圖片滑過色塊
+                            background-color: rgba(23, 23, 118, 0.8);
+                        }
+                        &:after {
+                            //文章區塊背景色
+                            //border-color: #005887 transparent transparent transparent;
+                        }
+                    }
+                    a.txt {
+                        h3 {
+                            //文字顏色
+                            //color: #fff;
+                            @include screen(pcLarge) {
+                                //文章標題滑過背景色
+                                //@include linear-gradient(to right, transparent 50%, $black 50%);
+                            }
+                        }
+                    }
+                }
+                &.big {
+                    .article {
+                        a.img {
+                            .linkWrap {
+                                //圖片滑過色塊
+                                background-color: rgba(23, 23, 118, 0.8);
+                            }
+                        }
+                    }
+                    &:after {
+                        //文章區塊背景色
+                        //border-color: transparent transparent #005887 transparent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.layout_03 {
+    //背景色
+    //background-color: $white;
+    .layoutWrap {
+        .title {
+            //上標題文字顏色
+            //color: $black;
+            &:after {
+                //上標題底線顏色
+                //background-color: $black;
+            }
+        }
+        .detail {
+            //下標題文字顏色
+            //color: $black;
+        }
+        .subTitleWrap {
+            p.subTitle {
+                //描述顏色
+                //color: rgba(102, 102, 102, 1);
+            }
+        }
+        .articleWrap {
+            ul.article {
+                li {
+                    .txtWrap {
+                        a.txt {
+                            h3 {
+                                @include screen(pcLarge) {
+                                    //文章標題滑過背景色
+                                    //@include linear-gradient(to right, transparent 50%, $black 50%);
+                                }
+                            }
+                        }
+                        a.more {
+                            span {
+                                @include screen(pcLarge) {
+                                    //了解更多滑過背景色
+                                    //@include linear-gradient(to right, transparent 50%, $black 50%);
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(odd) {
+                        a.img {
+                            .linkWrap {
+                                //奇數圖片滑過顏色
+                                background-color: rgba(23, 23, 118, 0.9);
+                            }
+                        }
+                    }
+                    &:nth-child(even) {
+                        //文章區塊背景色
+                        //background-color: rgba(23, 23, 118, 1);
+                        &:after {
+                            //文章區塊背景色－三角形
+                            //border-color: transparent transparent transparent rgba(244, 244, 244, 1);
+                        }
+                        a.img {
+                            .linkWrap {
+                                //偶數圖片滑過顏色
+                                background-color: rgba(23, 23, 118, 0.9);
+                            }
+                        }
+                        .txtWrap {
+                            a.category {
+                                //偶數類別文字顏色
+                                //color: rgba(0, 0, 0, 1);
+                                //偶數類別底線顏色
+                                //border-bottom: 1px solid rgba(0, 0, 0, 1);
+                            }
+                            a.txt {
+                                h3 {
+                                    //偶數文章標題顏色
+                                    //color: rgba(0, 0, 0, 1);
+                                }
+                            }
+                            a.more {
+                                span {
+                                    //偶數瞭解更多文字顏色
+                                    //color: rgba(102, 102, 102, 1);
+                                    &:hover {
+                                        //偶數瞭解更多文字顏色-滑過
+                                        //color: rgba(255, 255, 255, 1);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .moreBtn {
+                //是否出現更多文章
+                //display: block;
+                //更多文章文字顏色
+                //color: $black;
+                span {
+                    @include screen(pcLarge) {
+                        //更多文章滑過背景色
+                        //@include linear-gradient(to right, transparent 50%, $black 50%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.layout_04 {
+    //模板背景色
+    //background-color: $black;
+    .layoutWrap {
+        .title {
+            //上標題文字顏色
+            //color: $black;
+            &:after {
+                //上標題底線顏色
+                //background-color: $black;
+            }
+        }
+        .detail {
+            //下標題文字顏色
+            //color: $black;
+        }
+        .subTitleWrap {
+            .subTitle {
+                //描述文字顏色
+                //color: $white;
+            }
+        }
+        .sliderWrap {
+            .slidesWrap {
+                ul.slides {
+                    li {
+                        a.img {
+                            .linkWrap {
+                                //圖片滑過色塊
+                                background-color: rgba(23, 23, 118, 0.9);
+                            }
+                        }
+                        .txtWrap {
+                            a.txt {
+                                h3 {
+                                    @include screen(pcLarge) {
+                                        //文字滑過色塊
+                                        //@include linear-gradient(to right, transparent 50%, $black 50%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.video_01 {
+    background-image: url('../img/video_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(23,23,118,0.7);
+    @include screen(pcLarge) {
+        background-size: 100% auto;
+    }
+    .videoWrap {
+        @include screen(pcLarge) {
+            padding: 15% 0 4% 0;
+        }
+    }
+}
+
+.footer_01 {
+    //背景色
+    background-color: rgba(0,0,0,1);
+}
+
+ul.fixedBtn_01,
+.fixedBtnCover_01 .coverWrap .main .mainWrap .item ul.share {
+    li .material_btn {
+        //按鈕色
+        background-color: rgba(23,23,118,1);
+    }
+}
